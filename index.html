@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelligent - متجر ألعاب ومنتجات</title>
+    <style>
+        body {
+            font-family: 'Cairo', Arial, sans-serif;
+            margin: 0;
+            background: #f5f6fa;
+            color: #222;
+        }
+        header {
+            background: #353b48;
+            color: #fff;
+            padding: 1.5em;
+            text-align: center;
+        }
+        nav {
+            margin-top: 1em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .hero {
+            padding: 2em;
+            background: #4078e6;
+            color: #fff;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+            margin: 2em 0;
+        }
+        .product {
+            background: #fff;
+            border-radius: 9px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.11);
+            padding: 1em;
+            width: 250px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 90%;
+            border-radius: 7px;
+        }
+        .product h3 { margin: 1em 0 0.5em 0; }
+        .product p { margin: 0.7em 0; }
+        .contact {
+            background: #eee;
+            padding: 1.5em;
+            text-align: center;
+        }
+        .contact input, .contact textarea { width: 90%; padding: 0.7em; margin: 0.5em 0; font-family: inherit; }
+        .contact button {
+            background: #4078e6;
+            color: #fff;
+            border: none;
+            padding: 0.8em 2em;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        footer {
+            background: #353b48;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        @media(max-width:600px){
+            .products { flex-direction: column; align-items: center;}
+            .product { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Spelligent</h1>
+        <p>أفضل متجر لبيع الألعاب والمنتجات المميزة!</p>
+        <nav>
+            <a href="#products">المنتجات</a>
+            <a href="#contact">اتصل بنا</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>اكتشف عالم الألعاب مع Spelligent</h2>
+        <p>مجموعة ضخمة من أحدث الألعاب ومنتجات المرح والتسلية بين يديك، بأسعار منافسة وخدمة عملاء متواصلة!</p>
+    </section>
+    <main>
+        <div id="products" class="products">
+            <div class="product">
+                <img src="https://cdn.pixabay.com/photo/2016/04/01/09/28/toy-1293414_960_720.jpg" alt="لعبة كلاسيك">
+                <h3>لعبة كلاسيك</h3>
+                <p>لعبة تعليمية ممتعة، تناسب جميع الأعمار وتساعد على تطوير المهارات الفكرية.</p>
+                <p><strong>السعر:</strong> 65 ريال</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn.pixabay.com/photo/2017/08/06/10/14/toys-2597968_960_720.jpg" alt="لعبة مجمعة">
+                <h3>ليجو مجمعة</h3>
+                <p>مجموعة مكعبات ليجو لبناء الأشكال والخيال الواسع. مناسبة للأطفال والمراهقين.</p>
+                <p><strong>السعر:</strong> 120 ريال</p>
+            </div>
+            <div class="product">
+                <img src="https://cdn.pixabay.com/photo/2015/09/18/18/58/game-942421_960_720.jpg" alt="لعبة إلكترونية">
+                <h3>لعبة إلكترونية</h3>
+                <p>أحدث الألعاب الإلكترونية لجلسات اللعب الجماعية والمنافسات.</p>
+                <p><strong>السعر:</strong> 250 ريال</p>
+            </div>
+        </div>
+        <section id="contact" class="contact">
+            <h2>تواصل معنا</h2>
+            <form>
+                <input type="text" placeholder="اسمك" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+                <textarea rows="5" placeholder="رسالتك" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+            <p>لأي استفسار أو طلب خاص، يرجى مراسلتنا وسنرد عليك بأسرع وقت.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Spelligent - جميع الحقوق محفوظة
+    </footer>
+</body>
+</html>
